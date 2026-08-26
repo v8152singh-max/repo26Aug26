@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Decorators + Employee Demo</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Decorators & Employee Demo</h1>
+
+    <section>
+      <h2>/calculate (log + timer)</h2>
+      <label>Sleep seconds: <input id="sleep" type="number" step="0.1" value="0.2"></label>
+      <button id="btn-calc">Run calculate</button>
+    </section>
+
+    <section>
+      <h2>/dashboard (require_admin)</h2>
+      <label>User: <input id="user" type="text" value="guest"></label>
+      <button id="btn-dash">Open dashboard</button>
+    </section>
+
+    <section>
+      <h2>/employee (Employee + @property)</h2>
+      <label>Salary: <input id="salary" type="number" value="50000"></label>
+      <button id="btn-emp">Get employee salary</button>
+    </section>
+
+    <section>
+      <h2>/greet (wraps demo)</h2>
+      <button id="btn-greet">Get greet info</button>
+    </section>
+
+    <section>
+      <h2>Output</h2>
+      <pre id="output" class="output"></pre>
+    </section>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
